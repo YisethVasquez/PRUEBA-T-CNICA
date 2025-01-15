@@ -1,0 +1,74 @@
+Reporte de Bugs para los Casos de Prueba
+Bug 1: Login no funciona con credenciales correctas
+    • ID de Bug: BUG-001
+    • Título: El login no funciona con email y contraseña correctos.
+    • Descripción: El sistema debería permitir iniciar sesión con el email "usuario@ejemplo.com" y la contraseña "ContraseñaCorrecta123", pero al enviar el formulario, no redirige a la página principal.
+    • Pasos para Reproducir:
+        1. Ir a la URL de login.
+        2. Ingresar "usuario@ejemplo.com" en el campo de email.
+        3. Ingresar "ContraseñaCorrecta123" en el campo de contraseña.
+        4. Hacer clic en el botón de login.
+    • Resultado Esperado: El usuario debe ser redirigido a la página principal del sistema.
+    • Resultado Obtenido: El formulario se envía, pero no se redirige al usuario a la página principal.
+    • Severidad: Alta
+    • Prioridad: Alta
+    • Estado: Abierto
+    • Fecha de Reporte: 2025-01-15
+
+Bug 2: El formulario de login se envía sin campos completos
+    • ID de Bug: BUG-002
+    • Título: El formulario de login se envía aunque los campos no estén completos.
+    • Descripción: El sistema debería mostrar un mensaje de error si el formulario de login se envía sin completar los campos de email o contraseña, pero actualmente permite enviarlo sin mostrar el error.
+    • Pasos para Reproducir:
+        1. Ir a la URL de login.
+        2. No ingresar ningún valor en los campos de email y contraseña.
+        3. Hacer clic en el botón de login.
+    • Resultado Esperado: El sistema debe mostrar un mensaje de error indicando que ambos campos son obligatorios.
+    • Resultado Obtenido: El sistema no muestra ningún mensaje de error y el formulario se envía.
+    • Severidad: Media
+    • Prioridad: Alta
+    • Estado: Abierto
+    • Fecha de Reporte: 2025-01-15
+
+Bug 3: El nombre del usuario no se muestra después de login
+    • ID de Bug: BUG-003
+    • Título: El nombre del usuario no se muestra después de iniciar sesión.
+    • Descripción: Después de un login exitoso con las credenciales válidas, el sistema no muestra el nombre del usuario en la página principal, lo cual debería ser la expectativa.
+    • Pasos para Reproducir:
+        1. Iniciar sesión con el email "usuario@ejemplo.com" y la contraseña "ContraseñaCorrecta123".
+        2. Verificar si el nombre del usuario aparece en la página principal.
+    • Resultado Esperado: El nombre del usuario (por ejemplo, "Juan Perez") debe mostrarse en la interfaz.
+    • Resultado Obtenido: El nombre del usuario no aparece en la interfaz después de iniciar sesión.
+    • Severidad: Media
+    • Prioridad: Media
+    • Estado: Abierto
+    • Fecha de Reporte: 2025-01-15
+
+Bug 4: La opción de logout no redirige correctamente
+    • ID de Bug: BUG-004
+    • Título: La opción de logout no redirige a la página de login.
+    • Descripción: Al hacer clic en el botón de logout, el sistema debería redirigir al usuario a la página de login, pero no lo hace correctamente en algunos casos.
+    • Pasos para Reproducir:
+        1. Iniciar sesión con un usuario válido.
+        2. Hacer clic en el botón de logout.
+        3. Verificar si se redirige correctamente a la página de login.
+    • Resultado Esperado: El usuario debe ser redirigido a la página de login después de hacer logout.
+    • Resultado Obtenido: El sistema no redirige correctamente a la página de login y permanece en la misma página o muestra un error.
+    • Severidad: Alta
+    • Prioridad: Alta
+    • Estado: Abierto
+    • Fecha de Reporte: 2025-01-15
+Bug 4: No muestra los capos cuando se presentan errores en los campos 
+    • ID de Bug: BUG-005
+    • Título: No muestra los capos cuando se presentan errores en los campos 
+    • Descripción: AL diligenciar un campo mal o sin las carecteristicas del campo no muestra error 
+    • Pasos para Reproducir:
+        1. Ingresar campos 
+        2. Validar datos
+        3. Colocar datos incorrectos 
+    • Resultado Esperado: Debe mostrar el campo como error cuando no están correctamente diligenciados 
+    • Resultado Obtenido: No muestra error en campos 
+    • Severidad: Alta
+    • Prioridad: Alta
+    • Estado: Abierto
+    • Fecha de Reporte: 2025-01-15
